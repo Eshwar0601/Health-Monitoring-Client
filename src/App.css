@@ -2057,3 +2057,23 @@ section {
     font-size: 13px;
     color: #012970;
 }
+
+.img-avatar {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    color: fff;
+    background-color: #6e67ff !important;
+    border-color: #6e67ff !important;
+}
+
+.card-primary {
+    color: fff;
+    background-color: #6e67ff !important;
+    /* border-color: #6e67ff !important; */
+}

@@ -69,14 +69,14 @@ const MainComponent = () => {
                             <div data-aos="fade-up" data-aos-delay="600">
                                 <div>
                                     <Button
-                                        className="btn btn-get-started me-4"
+                                        className="btn btn-get-started me-3 p-4"
                                         onClick={goToRegister}
                                     >
                                         Register
                                     </Button>
 
                                     <Button
-                                        className="btn btn-get-started ms-4"
+                                        className="btn btn-get-started ms-2 p-4"
                                         onClick={goToLogin}
                                     >
                                         Login
