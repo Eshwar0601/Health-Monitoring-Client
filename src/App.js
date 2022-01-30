@@ -3,6 +3,7 @@ import "./App.css";
 import MainComponent from "./components/MainComponent";
 import RegisterComponent from "./components/RegisterComponent";
 import LoginComponent from "./components/LoginComponent";
+import "antd/dist/antd.css";
 
 function App() {
     return (
