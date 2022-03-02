@@ -17,8 +17,10 @@ import login from "../login.svg";
 import avatar from "../avatar.svg";
 import axios from "axios";
 import { message } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const LoginComponent = () => {
+    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -35,6 +37,7 @@ const LoginComponent = () => {
 
         if (loginInfo.status === 200) {
             message.success("Login Successful");
+            navigate("/dashboard");
         }
         if (loginInfo.response.status === 400) {
             message.error(loginInfo.response.data["error"]);

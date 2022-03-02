@@ -4,6 +4,7 @@ import MainComponent from "./components/MainComponent";
 import RegisterComponent from "./components/RegisterComponent";
 import LoginComponent from "./components/LoginComponent";
 import "antd/dist/antd.css";
+import Dashboard from "./components/Dashboard";
 
 function App() {
     return (
@@ -20,6 +21,11 @@ function App() {
                         exact
                         path="/login"
                         element={<LoginComponent />}
+                    ></Route>
+                    <Route
+                        exact
+                        path="/dashboard"
+                        element={<Dashboard />}
                     ></Route>
                 </Routes>
             </div>
