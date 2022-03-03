@@ -18,6 +18,7 @@ import avatar from "../avatar.svg";
 import axios from "axios";
 import { message } from "antd";
 import { useNavigate } from "react-router-dom";
+import NavBar from "./NavBar";
 
 const LoginComponent = () => {
     const navigate = useNavigate();
@@ -45,6 +46,7 @@ const LoginComponent = () => {
     };
     return (
         <div>
+            <NavBar />
             <Container className="mt-5">
                 <Row>
                     <Col lg={4} md={6} sm={12} className="mt-5 pt-5">

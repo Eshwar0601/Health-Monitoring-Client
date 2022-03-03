@@ -4,6 +4,7 @@ import logo from "../logo.svg";
 import hero from "../hero.svg";
 
 import { useNavigate } from "react-router-dom";
+import NavBar from "./NavBar";
 
 const MainComponent = () => {
     const navigate = useNavigate();
@@ -15,55 +16,19 @@ const MainComponent = () => {
     };
     return (
         <>
-            <header id="header" className="header fixed-top">
-                <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
-                    <div className="logo d-flex align-items-center">
-                        <img src={logo} className="App-logo" alt="logo" />
-                        <span>Smart </span>
-
-                        <span> Health</span>
-                    </div>
-
-                    <nav id="navbar" className="navbar">
-                        <ul>
-                            <li>
-                                <a
-                                    className="nav-link scrollto active"
-                                    href="#hero"
-                                >
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a className="nav-link scrollto" href="#about">
-                                    About
-                                </a>
-                            </li>
-
-                            <li>
-                                <a className="nav-link scrollto" href="#team">
-                                    Team
-                                </a>
-                            </li>
-
-                            <li>
-                                <Button className="getstarted scrollto">
-                                    Login
-                                </Button>
-                            </li>
-                        </ul>
-                        <i className="bi bi-list mobile-nav-toggle"></i>
-                    </nav>
-                </div>
-            </header>
-            <section id="hero" class="hero d-flex align-items-center">
-                <div class="container">
+            <NavBar />
+            <section id="hero" className="hero d-flex align-items-center mt-0">
+                <div className="container mt-0">
                     <div class="row">
                         <div class="col-lg-6 d-flex flex-column justify-content-center">
-                            <h1 data-aos="fade-up">
+                            <h1 data-aos="fade-up" className="text-white">
                                 Your Health in your Hands
                             </h1>
-                            <h2 data-aos="fade-up" data-aos-delay="400">
+                            <h2
+                                data-aos="fade-up"
+                                className="text-white"
+                                data-aos-delay="400"
+                            >
                                 Get Started Here.
                             </h2>
                             <div data-aos="fade-up" data-aos-delay="600">
