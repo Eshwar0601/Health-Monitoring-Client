@@ -37,7 +37,11 @@ const SideBar = () => {
                   Periodical Health Data
                 </CDBSidebarMenuItem>
               </NavLink>
-              <NavLink exact to="/profile" activeClassName="activeClicked">
+              <NavLink
+                exact
+                to="/dashboard/visualization"
+                activeClassName="activeClicked"
+              >
                 <CDBSidebarMenuItem icon="user">
                   Graphical Data
                 </CDBSidebarMenuItem>

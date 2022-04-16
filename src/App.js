@@ -7,6 +7,7 @@ import "antd/dist/antd.css";
 import Dashboard from "./components/Dashboard";
 import PeriodicalHealthTable from "./components/PeriodicalHealthTable";
 import MainDashboardLayout from "./components/MainDashboardLayout";
+import GraphicalData from "./components/GraphicalData";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="login" element={<LoginComponent />} />
           <Route exact path="dashboard" element={<MainDashboardLayout />}>
             <Route exact path="tables" element={<PeriodicalHealthTable />} />
+            <Route exact path="visualization" element={<GraphicalData />} />
           </Route>
         </Routes>
       </div>
