@@ -74,7 +74,7 @@ const HeartPrediction = () => {
             heartRate,
         ];
         const result = await model.predict(tf.tensor(inputData, [1, 10]));
-        if (Number(result.dataSync()[0]) >= 0.1) {
+        if (Number(result.dataSync()[0]) >= 0.2) {
             setResult(
                 "You are under the risk of encountering Coronary heart disease in the next 10 years"
             );
