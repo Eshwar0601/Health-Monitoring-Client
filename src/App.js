@@ -8,23 +8,41 @@ import Dashboard from "./components/Dashboard";
 import PeriodicalHealthTable from "./components/PeriodicalHealthTable";
 import MainDashboardLayout from "./components/MainDashboardLayout";
 import GraphicalData from "./components/GraphicalData";
+import HeartPrediction from "./components/HeartPrediction";
 
 function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route exact path="/" element={<MainComponent />} />
-          <Route exact path="register" element={<RegisterComponent />} />
-          <Route exact path="login" element={<LoginComponent />} />
-          <Route exact path="dashboard" element={<MainDashboardLayout />}>
-            <Route exact path="tables" element={<PeriodicalHealthTable />} />
-            <Route exact path="visualization" element={<GraphicalData />} />
-          </Route>
-        </Routes>
-      </div>
-    </Router>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <Routes>
+                    <Route exact path="/" element={<MainComponent />} />
+                    <Route
+                        exact
+                        path="register"
+                        element={<RegisterComponent />}
+                    />
+                    <Route exact path="login" element={<LoginComponent />} />
+                    <Route
+                        exact
+                        path="dashboard"
+                        element={<MainDashboardLayout />}
+                    >
+                        <Route
+                            exact
+                            path="tables"
+                            element={<PeriodicalHealthTable />}
+                        />
+                        <Route
+                            exact
+                            path="visualization"
+                            element={<GraphicalData />}
+                        />
+                        <Route exact path="chd" element={<HeartPrediction />} />
+                    </Route>
+                </Routes>
+            </div>
+        </Router>
+    );
 }
 
 export default App;

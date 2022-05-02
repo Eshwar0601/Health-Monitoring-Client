@@ -36,6 +36,7 @@ const SideBar = () => {
                                     Home
                                 </CDBSidebarMenuItem>
                             </NavLink>
+                            <hr />
                             <NavLink
                                 exact
                                 to="/dashboard/tables"
@@ -54,15 +55,19 @@ const SideBar = () => {
                                     Graphical Data
                                 </CDBSidebarMenuItem>
                             </NavLink>
+                            <hr />
+
                             <NavLink
                                 exact
-                                to="/analytics"
+                                to="/dashboard/chd"
                                 activeClassName="activeClicked"
                             >
                                 <CDBSidebarMenuItem icon="chart-line">
-                                    Prediction and Analytics
+                                    CHD Prediction
                                 </CDBSidebarMenuItem>
                             </NavLink>
+
+                            <hr />
 
                             <NavLink
                                 exact
